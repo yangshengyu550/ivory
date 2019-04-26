@@ -1,0 +1,39 @@
+<html>
+    <head>
+    <title>豆瓣电影top250</title>
+    </head>
+    <body>
+       <font color="#FF0000" size="20px"><center> 豆瓣电影</center></font>
+    <br>
+    <table border="2" align="center">
+        <tr>
+            <td width="100" id="title">排名</td>
+            <td width="100" name="title">电影</td>
+            <td width="100" url="title">链接</td>
+            <td width="100" author="title">导演</td>
+            <td width="100" publisher="title">主演</td>
+            <td width="100" year="title">年份</td>
+            <td width="100" price="title">地区</td>
+            <td width="100" rate="title">类型</td>
+            <td width="100" name="title">评分</td>
+            <td width="100" comments="title">评论</td>
+        </tr>
+        {% for i in order %}
+        <tr>  
+            <td width="100">{{i.0}}</td>  
+            <td width="100">{{i.1}}</td>  
+            <td width="100">{{i.2}}</td> 
+            <td width="100">{{i.3}}</td> 
+            <td width="100">{{i.4}}</td> 
+            <td width="100">{{i.5}}</td>  
+            <td width="100">{{i.6}}</td> 
+            <td width="100">{{i.7}}</td>
+            <td width="100">{{i.8}}</td>
+            <td width="100">{{i.9}}</td> 
+        </tr>
+        {% endfor %}
+            
+
+    </table>
+    </body>
+</html>
